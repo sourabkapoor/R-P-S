@@ -1,0 +1,26 @@
+.playAreaContr {
+  position: relative;
+  margin: 70px 0;
+
+  .scoresContr {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Press Start 2P', cursive;
+      color: Yellow;
+      margin: 30px 0;
+
+    .scoretable {
+      background-color: rgb(176, 176, 176);
+      width: max-content;
+      border-radius: 7px;
+      border: none !important;
+
+      th, td {
+        border: none !important;
+        font-family: 'Press Start 2P', cursive !important;
+      }
+    }
+  }
+}

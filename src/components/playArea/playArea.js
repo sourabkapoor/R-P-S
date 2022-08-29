@@ -15,37 +15,37 @@ const PlayArea = () => {
   const [userScore, setUserScore] = React.useState(0)
 
   React.useEffect(() => {
-    if(userScore == 5){
+    if(userScore === 5){
       alert("you won!!")
       navigate('/')
     }
-    else if(compuerScore == 5) {
+    else if(compuerScore === 5) {
       alert("computer won!!")
       navigate('/')
     }
 
-  }, [compuerScore == 5 || userScore == 5])
+  }, [compuerScore, userScore, navigate])
 
   const newMove = (userChoice) => {
     const cOptions = ["Rock", "Paper", "Scissor"];
     const computerChose = cOptions[Math.floor(Math.random() * 3)]
 
-    if(computerChose == "Rock" && userChoice == "Paper") {
+    if(computerChose === "Rock" && userChoice === "Paper") {
       setUserScore(userScore + 1)
     }
-    else if(computerChose == "Paper" && userChoice == "Rock") {
+    else if(computerChose === "Paper" && userChoice === "Rock") {
       setComputerScore(compuerScore + 1)
     }
-    else if(computerChose == "Scissor" && userChoice == "Rock") {
+    else if(computerChose === "Scissor" && userChoice === "Rock") {
       setUserScore(userScore + 1)
     }
-    else if(computerChose == "Rock" && userChoice == "Scissor") {
+    else if(computerChose === "Rock" && userChoice === "Scissor") {
       setComputerScore(compuerScore + 1)
     }
-    else if(computerChose == "Scissor" && userChoice == "Paper") {
+    else if(computerChose === "Scissor" && userChoice === "Paper") {
       setComputerScore(compuerScore + 1)
     }
-    else if(computerChose == "Paper" && userChoice == "Scissor") {
+    else if(computerChose === "Paper" && userChoice === "Scissor") {
       setUserScore(userScore + 1)
     }
   }

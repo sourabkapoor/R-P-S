@@ -3,7 +3,7 @@ import "./header.scss"
 import Home from "../../assets/home.png"
 import { useNavigate, useLocation } from "react-router-dom"
 
-const Header = (props) => {
+const Header = () => {
   let navigate = useNavigate();
   const location = useLocation();
 

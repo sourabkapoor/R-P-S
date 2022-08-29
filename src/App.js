@@ -1,5 +1,5 @@
 import './App.scss';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Header from './components/header/header';
 import Home from './components/home/home';
 import PlayArea from './components/playArea/playArea';

@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Rock Paper Scissor React App
+
+Live at: https://glittering-swan-c58291.netlify.app/
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
